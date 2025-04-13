@@ -1,7 +1,7 @@
-streamlit
 flask
 python-dotenv
 langchain
 langchain-groq
 groq
 google-search-results
+gunicorn
