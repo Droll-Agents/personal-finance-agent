@@ -59,4 +59,5 @@ if __name__ == '__main__':
     if not os.environ.get('GROQ_API_KEY'):
         print("Warning: GROQ_API_KEY not found in environment variables. Please set it in the .env file.")
     
-    app.run(debug=True)
+    debug_mode = os.environ.get('FLASK_ENV') == 'development'
+    app.run(debug=debug_mode)
